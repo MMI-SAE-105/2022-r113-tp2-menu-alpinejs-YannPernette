@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" x-data="{descr1Open: false}" x-data="{descr2Open: false}" x-data="{descr3Open: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,15 +45,15 @@
     </header>
 
     <dl>
-      <dt aria-controls="descr1" @click="descr1Open =! descr1Open">Lorem.</dt>
+      <dt x-data="{descr1Open: false}" aria-controls="descr1" @click="descr1Open =! descr1Open">Lorem.</dt>
       <dd id="descr1" x-show="descr1Open">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
-      <dt aria-controls="descr2" @click="descr2Open =! descr2Open">Sint!</dt>
+      <dt x-data="{descr2Open: false}" aria-controls="descr2" @click="descr2Open =! descr2Open">Sint!</dt>
       <dd id="descr2" x-show="descr2Open">Praesentium laborum quo repellat. Accusantium.</dd>
     </dl>
     <dl>
-      <dt aria-controls="descr3" @click="descr3Open =! descr3Open">Nam!</dt>
+      <dt x-data="{descr3Open: false}" aria-controls="descr3" @click="descr3Open =! descr3Open">Nam!</dt>
       <dd id="descr3" x-show="descr3Open">Aperiam error vel tempore quos!</dd>
     </dl>
 
