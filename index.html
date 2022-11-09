@@ -44,10 +44,14 @@
       </nav>
     </header>
 
+
+    <div x-data="{descr1Open: false}">
     <dl>
-      <dt x-data="{descr1Open: false}" aria-controls="descr1" @click="descr1Open =! descr1Open">Lorem.</dt>
+      <div aria-controls="descr1" @click="descr1Open =! descr1Open"> <dt>Lorem.</dt> </div>
       <dd id="descr1" x-show="descr1Open">Lorem ipsum dolor sit amet.</dd>
     </dl>
+    </div>
+
     <dl>
       <dt x-data="{descr2Open: false}" aria-controls="descr2" @click="descr2Open =! descr2Open">Sint!</dt>
       <dd id="descr2" x-show="descr2Open">Praesentium laborum quo repellat. Accusantium.</dd>
