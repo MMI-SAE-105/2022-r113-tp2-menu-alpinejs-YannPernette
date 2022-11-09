@@ -52,10 +52,13 @@
     </dl>
     </div>
 
+    <div x-data="{descr2Open: false}">
     <dl>
-      <dt x-data="{descr2Open: false}" aria-controls="descr2" @click="descr2Open =! descr2Open">Sint!</dt>
+      <div aria-controls="descr2" @click="descr2Open =! descr2Open"> <dt>Sint!</dt> </div>
       <dd id="descr2" x-show="descr2Open">Praesentium laborum quo repellat. Accusantium.</dd>
     </dl>
+    </div>
+
     <dl>
       <dt x-data="{descr3Open: false}" aria-controls="descr3" @click="descr3Open =! descr3Open">Nam!</dt>
       <dd id="descr3" x-show="descr3Open">Aperiam error vel tempore quos!</dd>
