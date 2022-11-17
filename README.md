@@ -1,3 +1,3 @@
 - nom : PERNETTE
 - prénom : Yann
-- URL publique du site : https://fascinating-tartufo-4a4bc3.netlify.app/
+- URL publique du site : https://elaborate-paletas-2a4ff9.netlify.app
